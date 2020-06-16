@@ -1,11 +1,11 @@
 # PyAudio for PyPy3
-`pypi3 -m pip install pyaudio` fails to install PyAudio for PyPy3. This is because PyPy3 C-API is slightly different from CPython C-API.
+`pypy3 -m pip install pyaudio` fails to install PyAudio for PyPy3. This is because PyPy3 C-API is slightly different from CPython C-API.
 
 Install PyAudio for PyPy3:
 ```bash
 git clone https://github.com/iovsiann/pyaudio
 cd pyaudio
-pypi3 -m pip install .
+pypy3 -m pip install .
 ```
 
 # Original PyAudio
