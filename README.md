@@ -1,6 +1,16 @@
 # PyAudio for PyPy3
 `pypy3 -m pip install pyaudio` fails to install PyAudio for PyPy3. This is because PyPy3 C-API is slightly different from CPython C-API.
 
+Install PortAudio from source: http://www.portaudio.com/download.html
+```bash
+cd
+wget http://portaudio.com/archives/pa_stable_v190600_20161030.tgz
+tar -zxvf pa_stable_v190600_20161030.tgz
+cd portaudio
+./configure && make
+sudo make install
+```
+
 Install PyAudio for PyPy3:
 ```bash
 git clone https://github.com/iovsiann/pyaudio
